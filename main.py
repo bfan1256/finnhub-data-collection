@@ -40,9 +40,9 @@ def main():
 
 
 if __name__ == "__main__":
-    # schedule.every().day.at('16:00').do(main)
+    schedule.every().day.at('16:00').do(main)
 
-    # while True:
-    #     schedule.run_pending()
-    #     time.sleep(60)
+    while True:
+        schedule.run_pending()
+        time.sleep(60)
     main()
